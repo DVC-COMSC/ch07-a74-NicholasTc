@@ -1,10 +1,15 @@
+# check if there is more than 1 values
+try:
+    numbers = [5,20,30,30,50]
+    num = int(input("Enter number from list to be removed: "))
 
+    if numbers.count(num) > 1:
+        for n in numbers:
+            if n == num:
+                numbers.remove(n)
+    else:
+        numbers.remove(num)
+except ValueError:
+    numbers.clear()
 
-numbers = [5, 20, 30, 30, 50]
-delval = int(input('Enter the deletion value: '))
-
-# ******************************
-# Make your Code
-# ******************************
-
-print (numbers)
+print(numbers)
