@@ -10,6 +10,7 @@ try:
         for n in numbers:
             if n == num:
                 numbers.remove(n)
+            print(n)
     else:
         numbers.remove(num)
 except ValueError:
